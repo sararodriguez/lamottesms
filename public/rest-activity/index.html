@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Custom IXN Activity Test</title>
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/require.js"></script>
+        <script type="text/javascript">
+            (function() {
+                var config = {
+                    baseUrl: ''
+                };
+
+                var dependencies = [
+                    'customActivity'
+                ];
+
+                require(config, dependencies);
+            })();
+        </script>
+
+        <!--Styles-->
+        <style type="text/css">
+            body {
+                padding: 20px;
+                margin: 0;
+            }
+            .step {
+                display: none;
+            }
+            #step1 {
+                display: block;
+            }
+            #payload {
+                position: relative;
+                width: 100%;
+                height: 30em;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="step1" class="step">
+            SMS message:
+            <textarea rows="4" cols="50" id="select1">
+                Escreva Sua Mensagem SMS. 
+            </textarea>
+            <h1>Initial Payload</h1>
+            <pre id="initialPayload">Loading...</pre>
+            <div id="initialPayload"></div>
+            <h1>Data Binding Schema</h1>
+            <pre id="schema">Loading...</pre>
+            <h1>Culture</h1>
+            <pre id="culture">Loading...</pre>
+            <h1>Endpoints</h1>
+            <pre id="endpoints">Loading...</pre>
+            <h1>Defaults</h1>
+            <pre id="interactionDefaults">Loading...</pre>
+        </div>
+        <div id="step2" class="step">
+            Here's a second page with some info on it. In this case, the full payload that will be sent to the server when we're done here. Feel free to mess with it, but whatever you do, it must result in valid JSON:<br />
+            <textarea id="payload"></textarea>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "name": "lamottesms",
+  "description": "A SMS REST custom activity for Journey Builder",
+  "repository": "https://github.com/heroku/node-js-sample",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "Journey Builder"],
+  "scripts": {
+    "postdeploy": "bundle exec rake bootstrap"
+  },
+  "env": {
+    "JB_ACTIVITY_NAME": {
+      "description": "Lamotte SMS"
+    }
+    "JB_APP_ID": {
+      "description": "5ee5e320-102e-4e99-a5c2-13aa5f374e12"
+    },
+    "JB_APP_SIGNATURE": {
+      "description": "ysme21vautb1pwf0y5blbz1dkz1irogxocn015vaulkwgfuv2fyybemw2bzaavhgjqm5viwbkfvzgzp23w1f3tgxe4jati354nemg53ewb1fa3hzuu40eh5f52fry2lcaju55ukqx3xvmwn1gduqkd242t42jghh4zm1vfvrdcwfd1knrgjrv4vroh1h33qcdck3f20a1zegabfusxn3u5cavljc4wufetbky50jtja2p40dp2oco1l0hajp21w"
+    },
+    "JB_AUTH_URL": {
+      "description": "API Authentication URL",
+      "value": "https://auth.exacttargetapis.com/v1/requestToken?legacy=1"
+    },
+    "JB_CLIENT_ID": {
+      "description": "n2dxj3zpmkrfn2nmdhb42bv4"
+    },
+    "JB_CLIENT_SECRET": {
+      "description": "X79dukVuUAap37NX9m3ciA7v"
+    },
+    "JB_ACTIVITY_KEY": {
+      "description": "LamotteSMS"
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    }
+  ]
+}

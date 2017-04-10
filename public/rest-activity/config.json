@@ -1,0 +1,61 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+        "icon": "images/sms.png",
+        "iconSmall": "images/smsSmall.png",
+        "category": "message"
+    },
+    "type": "REST",
+    "lang": {
+        "en-US": {
+            "name": "TESTE",
+            "description": "TESTE"
+        }
+    },
+    "arguments": {
+        "execute": {
+            "inArguments": [],
+            "outArguments": [],
+            "url": "https://glacial-brook-96867.herokuapp.com/rest-activity/execute",
+            "useJWT": true
+        }
+    },
+    "configurationArguments": {
+        "applicationExtensionKey": "cxwrloass3dq4fadybhldrgzukp1vcz5wm3xvmskf4byj0ndgp0cboi0qge4jmvs3jbv0zq4fu5rtiof4vyhxdauyux5unq15bqfwjdjqfy30c3dtt1qhwiwa4js1gpkcx0b0yjtc1chhb1awl1inwss5iuyyqsjxtjsd2o0gi1zwvxarpgw2cnclxcj1ih0pz0eyzqqiquek3tersnfqtovcc24nm3tt4ibogxersdvxidkyaffp12npecsqe0",
+        "save": {
+            "url": "https://glacial-brook-96867.herokuapp.com/rest-activity/save"
+        },
+        "publish": {
+            "url": "https://glacial-brook-96867.herokuapp.com/rest-activity/publish"
+        },
+        "validate": {
+            "url": "https://glacial-brook-96867.herokuapp.com/rest-activity/validate"
+        }
+    },
+    "wizardSteps": [
+        { "label": "Step 1", "key": "step1" },
+        { "label": "Step 2", "key": "step2" }
+    ],
+    "userInterfaces": {
+        "configModal": {
+            "height": 200,
+            "width": 300,
+            "fullscreen": true
+        },
+        "runningModal": {
+            "url": "runningModal.html"
+        },
+        "runningHover": {
+            "url": "runningHover.html"
+        }
+    },
+    "schema": {
+        "arguments": {
+            "execute": {
+                "inArguments": [],
+                "outArguments": []
+            }
+        }
+    },
+    "sslNotRequired": true
+}
