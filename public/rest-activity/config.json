@@ -16,20 +16,20 @@
         "execute": {
             "inArguments": [],
             "outArguments": [],
-            "url": "https://glacial-brook-96867.herokuapp.com/rest-activity/execute",
+            "url": "https://dashboard.heroku.com/apps/app-salesforce-example/rest-activity/execute",
             "useJWT": true
         }
     },
     "configurationArguments": {
-        "applicationExtensionKey": "cxwrloass3dq4fadybhldrgzukp1vcz5wm3xvmskf4byj0ndgp0cboi0qge4jmvs3jbv0zq4fu5rtiof4vyhxdauyux5unq15bqfwjdjqfy30c3dtt1qhwiwa4js1gpkcx0b0yjtc1chhb1awl1inwss5iuyyqsjxtjsd2o0gi1zwvxarpgw2cnclxcj1ih0pz0eyzqqiquek3tersnfqtovcc24nm3tt4ibogxersdvxidkyaffp12npecsqe0",
+        "applicationExtensionKey": "custom-activity-salesforce",
         "save": {
-            "url": "https://glacial-brook-96867.herokuapp.com/rest-activity/save"
+            "url": "https://dashboard.heroku.com/apps/app-salesforce-example/rest-activity/save"
         },
         "publish": {
-            "url": "https://glacial-brook-96867.herokuapp.com/rest-activity/publish"
+            "url": "https://dashboard.heroku.com/apps/app-salesforce-example/rest-activity/publish"
         },
         "validate": {
-            "url": "https://glacial-brook-96867.herokuapp.com/rest-activity/validate"
+            "url": "https://dashboard.heroku.com/apps/app-salesforce-example/rest-activity/validate"
         }
     },
     "wizardSteps": [
