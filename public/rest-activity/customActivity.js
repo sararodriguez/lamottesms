@@ -25,7 +25,7 @@ define([
     connection.on('requestedSchema', onGetSchema);
     connection.on('requestedCulture', onGetCulture);
     connection.on('requestedInteractionDefaults', onGetInteractionDefaults);
-    connection.on('updateActivity', onUpdateActivity)
+    connection.on('updateActivity', onUpdateActivity);
 
     connection.on('clickedNext', onClickedNext);
     connection.on('clickedBack', onClickedBack);
